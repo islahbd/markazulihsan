@@ -1,0 +1,344 @@
+/* Basic Reset and Font */
+body {
+    margin: 0;
+    font-family: 'SolaimanLipi', 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-weight: normal;
+}
+
+/* Mobile Screen Simulation */
+.mobile-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.page-header {
+    text-align: center;
+    padding: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    background-color: #000;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* --- SLIDER CSS --- */
+.slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    min-width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content {
+    padding: 15px;
+    position: relative;
+}
+
+/* Card Sections */
+.card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    position: relative;
+    z-index: 1;
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #8d080c;
+    font-size: 25px;
+}
+
+.card h4 {
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: normal; 
+    color: #000000;
+}
+.card p {
+    color: #2d2d2e;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 0.95em;
+    font-weight: normal; 
+    margin: 10px 0;
+}
+
+/* Glassmorphism Button */
+.glass-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    transition: all 0.3s ease;
+}
+
+.glass-button:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Footer Menu (Glass Style) */
+.glass-footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px; 
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-icon {
+    color: #333;
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #007aff;
+    transform: scale(1.1);
+}
+
+/* --- MODAL STYLES --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.21); 
+    font-family: 'SolaimanLipi', sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+/* --- ULTRA CLEAR GLASS EFFECT --- */
+/* এখানে পরিবর্তন করা হয়েছে */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1); /* Made the background even more transparent */
+    backdrop-filter: blur(30px); /* Increased the blur for a smoother effect */
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Softened the border */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 20px;
+}
+
+.close-button {
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+}
+
+/* Search Input Styling */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.glass-input {
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.596); /* ইনপুট ফিল্ডও স্বচ্ছ করা হয়েছে */
+    font-family: 'SolaimanLipi', sans-serif;
+    font-size: 1.1em;
+    outline: none;
+    text-align: center;
+    color: #000;
+}
+
+.glass-input:focus {
+    border-color: #8d080c;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 5px rgba(141, 8, 12, 0.2);
+}
+
+.search-btn {
+    background: #8d080c; 
+    color: white;
+    width: 50%;
+    font-family: 'SolaimanLipi', sans-serif;
+    border: none;
+}
+
+.search-btn:hover {
+    background: #6d0609;
+}
+
+/* --- RESULT MODAL & IMAGE STYLING --- */
+.result-modal {
+    max-width: 350px;
+    margin-top: 50px !important; 
+    overflow: visible !important; 
+    padding-top: 40px; 
+    animation: fadeInScale 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-pic-container {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.member-details {
+    padding: 10px 0;
+    font-size: 1.05em;
+    line-height: 1.8;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+    padding: 8px 0;
+}
+
+.detail-label {
+    font-weight: normal;
+    color: #000000; /* টেক্সট কালার একটু গাঢ় করা হলো স্বচ্ছ ব্যাকগ্রাউন্ডের জন্য */
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.detail-value {
+    color: #000;
+    font-weight: normal;
+    text-align: right;
+    max-width: 65%;
+    word-break: break-word;
+}
+
+.status-due {
+    color: #76020e;
+    font-weight: normal;
+}
+
+.status-paid {
+    color: #043d11;
+    font-weight: normal;
+}
+
+.due-years-list {
+    padding: 2px 8px;
+    font-size: 0.9em;
+    color: #d63031;
+    margin-top: 5px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15); /* অপাসিটি অনেক কমিয়ে ০.১৫ করা হয়েছে */
+    backdrop-filter: blur(25px) saturate(200%); /* ব্লার বাড়ানো হয়েছে যাতে ব্যাকগ্রাউন্ডের উপর লেখা পড়া যায় */
+    -webkit-backdrop-filter: blur(25px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.4); /* বর্ডার একটু স্পষ্ট করা হয়েছে */
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 10px;
+}
