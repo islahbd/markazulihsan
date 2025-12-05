@@ -85,21 +85,18 @@ body {
     color: #8d080c;
     font-size: 25px;
 }
-
 .card h1 {
     margin-top: 0;
     margin-bottom: 8px;
     color: #8d080c;
     font-size: 28px;
 }
-
 .card h3 {
     margin-top: 0;
     margin-bottom: 8px;
     color: #8d080c;
     font-size: 22px;
 }
-
 .card h4 {
     margin: 10px 0;
     font-size: 1.1em;
@@ -357,3 +354,4 @@ body {
     border-radius: 10px;
 
 }
+
