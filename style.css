@@ -86,6 +86,20 @@ body {
     font-size: 25px;
 }
 
+.card h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #8d080c;
+    font-size: 28px;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #8d080c;
+    font-size: 22px;
+}
+
 .card h4 {
     margin: 10px 0;
     font-size: 1.1em;
@@ -341,4 +355,5 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.4); /* বর্ডার একটু স্পষ্ট করা হয়েছে */
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
     border-radius: 10px;
+
 }
